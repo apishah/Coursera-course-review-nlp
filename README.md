@@ -16,10 +16,11 @@ Steps:
 
  - Data Cleaning:
    
-       Some reviews are written in different languages. Using TextBlob, I identified the language for each review. I tried translating 
-    non-English reviews into English with Google Translate, but I exceeded the free tier limit. So, for further analysis, I have used 
+     Some reviews are written in different languages. Using TextBlob, I identified the language for each review. I tried translating 
+    non-English reviews into English with Google Translate but exceeded the free tier limit. So, for further analysis, I have used 
     reviews written in English.
-       Converted all textual data into lowercase. Using regex, I removed all non-alpha characters such as special characters, extra 
+   
+     Converted all textual data into lowercase. Using regex, I removed all non-alpha characters such as special characters, extra 
     spaces, numbers, emoji, etc. Used SymSpellPy to convert each token into the appropriate English word.Removed Stopped words
     Using Lemmatization converted the word into its original form using the POS tag.
 
