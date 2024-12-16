@@ -7,13 +7,15 @@ Performing Sentiment Analysis on reviews scrapped from Coursera.​
  - Finding the top 5 and bottom 5 courses for each  subject based on the ratio of positive, and negative reviews.
 
 Steps:
- - Data Extraction
+ - Data Extraction:
+   
       Using Selenium, first scrapped all the course links for 7 different domains, such as technology, healthcare, Maths, Arts and 
       Humanities etc.
       Fetched all the reviews, and star ratings  for each course and assigned a unique ID to each course.
       A total of 75k reviews were fetched.
 
- - Data Cleaning
+ - Data Cleaning:
+   
        Some reviews are written in different languages. Using TextBlob, I identified the language for each review. I tried translating 
     non-English reviews into English with Google Translate, but I exceeded the free tier limit. So, for further analysis, I have used 
     reviews written in English.
@@ -36,7 +38,8 @@ Steps:
         2) Percentage of positive, neutral, and negative reviews for each course.
    
  - Sentiment Analysis:
-    - We Split the data set into train  & test datasets in the ratio 70:30 respectively
+   
+     We Split the data set into train  & test datasets in the ratio 70:30 respectively
     ### 4 Classification models used for prediction
       - Logistic Regression
       - KNN classifier
