@@ -21,26 +21,28 @@ Steps:
     spaces, numbers, emoji, etc. Used SymSpellPy to convert each token into the appropriate English word.Removed Stopped words
     Using Lemmatization converted the word into its original form using the POS tag.
 
- - Data Preprocessing
+ - Data Preprocessing:
+   
     Converted star ratings into positive, neutral, and negative
-      Ratings > 3  (Positive, 1)
-      Ratings = 3 (Neutral, 0)
-      Ratings < 3  (Negative, -1)
-     To convert textual data into vectors we used the TF-IDF concept, which converted all tokens into numeric values.
+       - Ratings > 3  (Positive, 1)
+       - Ratings = 3 (Neutral, 0)
+       - Ratings < 3  (Negative, -1)
+      To convert textual data into vectors we used the TF-IDF concept, which converted all tokens into numeric values.
 
- - Data Visualization
+ - Data Visualization:
+   
      To understand data in a better manner, Performed visualization for the following.
         1) Plotted the number of courses for each subject in horizontal bar charts and the total number of reviews for each subject in             line charts.
+        2) Percentage of positive, neutral, and negative reviews for each course.
+   
+ - Sentiment Analysis:
+    - We Split the data set into train  & test datasets in the ratio 70:30 respectively
+    ### 4 Classification models used for prediction
+      - Logistic Regression
+      - KNN classifier
+      - Random Forest
+      - Gaussian Naïve Bayes
 
- - Sentiment Analysis
- - Model Evaluation
-
-
-
-
-
-
-In this project I have retrieved reviews from each course, and then  
-cleaned the data using Natural Language Processing.Then I performed sentiment analysis to determine whether the 
-review is positive, neutral, or negative, and then I determined which courses are most popular and have the most 
-positive or negative reviews. 
+     - Evaluated model based on precision, recall, and f1 score.Out of 4 Models Random Forest performed the best.Saved our trained 
+       model in a pickle file which we can use for further prediction.
+   
